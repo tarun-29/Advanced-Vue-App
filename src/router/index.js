@@ -21,11 +21,16 @@ const routes = [
     path: '/seasons',
     name: 'Seasons',
     component : Seasons
+  },
+  {
+    path: '*',
+    redirect: '/'
   }
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode:'history'
 })
 
 export default router
