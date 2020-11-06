@@ -1,7 +1,7 @@
 <template>
   <div :class="`team-card ${team.short}-card`">
     <div class="card">
-      <div class="team-card-front" :style="style(team.photo)">
+      <div class="team-card-front">
         <div class="content" :style="{ background: team.color }">
           <div class="logo">
             <img
@@ -138,9 +138,6 @@ export default {
     };
   },
   methods: {
-    style(photo) {
-      return `background: url(${photo}) center center no-repeat`;
-    },
     totalMatches() {
       return this.team.totalMatches.reduce((a, b) => a + b);
     },

@@ -1,21 +1,21 @@
 <template>
   <div class="hello">
-    <div class="flexbox">
+    <div class="flexbox" v-if="info!==null">
       <div>
         <h1>Total Matches</h1>
-        <h3>{{ info.total_matches }}</h3>
+        <h2>{{ info.total_matches }}</h2>
       </div>
       <div>
         <h1>Total Over</h1>
-        <h3>{{ info.over_bowled }}</h3>
+        <h2>{{ info.over_bowled }}</h2>
       </div>
       <div>
         <h1>Total Runs</h1>
-        <h3>{{ info.runs_scored }}</h3>
+        <h2>{{ info.runs_scored }}</h2>
       </div>
       <div>
         <h1>Economy</h1>
-        <h3>{{ info.economy }}</h3>
+        <h2>{{ info.economy }}</h2>
       </div>
     </div>
   </div>
@@ -44,6 +44,10 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   margin-top: 10px;
-  
+}
+h2{
+  font-size: 50px;
+  margin-top: -20px;
+  color: greenyellow;
 }
 </style>

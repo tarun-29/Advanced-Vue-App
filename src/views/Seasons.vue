@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>IPL {{year}}</h1>
-    <div class="flex">
+    <div class="flex" v-if="this.seasonDetail!==null">
       <div>
         <season-awards :awards="this.seasonDetail.awards" />
       </div>

@@ -107,7 +107,7 @@ export default {
     -moz-transform: rotate(-90deg);
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     top: 172px;
-    color: #505050;
+    color: #0092cc;
     left: -127px;
   }
   .custom-dropdown {

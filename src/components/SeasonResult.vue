@@ -69,7 +69,7 @@
         -moz-transform: rotate(-90deg);
         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
         top: 172px;
-        color: #505050;
+        color: #0092cc;
         left: -127px;
       }
       & .winner{
@@ -77,7 +77,8 @@
         position: absolute;
         & .first{
           font-size: 141px;
-          color: #40b9e74d;
+          // color: #40b9e74d;
+          color: #b29700;
           top: 0;
         }
         & div {
@@ -92,7 +93,8 @@
         position: absolute;
         & .second{
           font-size: 100px;
-          color: #31566442;
+          // color: #31566442;
+          color: #40b9e74d;
           top: 0;
         }
         & div {
